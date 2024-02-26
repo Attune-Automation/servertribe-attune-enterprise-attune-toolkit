@@ -1,0 +1,25 @@
+mkvg() {
+    VG=$1
+    DEV=$2
+
+    while ! test -e /dev/$DEV
+    do
+        echo "Waiting for kernel to detect new disk"
+        sleep 1
+    done
+    
+    parted -s /dev/$DEV mktable gpt
+    parted -s /dev/$DEV mkpart primary xfs 1m 100%
+    
+    vgextend $VG /dev/${DEV}1
+}
+
+if [ -n "{lvmVgDisksToAdd}" ]
+then
+    for disk in {lvmVgDisksToAdd}
+    do
+        mkvg rootvg $disk
+    done
+else
+    echo "SKIPPING: No disks configured"
+fi

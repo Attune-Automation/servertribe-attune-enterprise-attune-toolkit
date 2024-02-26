@@ -1,0 +1,11 @@
+{
+    "externalUuid4": "0a435b0c-0b27-4f13-b401-d635fe775d49", 
+    "fileName": "attune_ee_el8_VER (1).tar.bz2", 
+    "formatKey": "tar.bz2", 
+    "key": "attuneenterpriserelease", 
+    "md5": "19d494117059a88dfc10ba2ae2788229", 
+    "name": "Attune Enterprise Release", 
+    "remoteUri": null, 
+    "size": 90824945, 
+    "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
+}
