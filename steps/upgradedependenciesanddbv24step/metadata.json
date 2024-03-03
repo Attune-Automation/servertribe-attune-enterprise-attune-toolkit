@@ -1,0 +1,56 @@
+{
+    "actionOnStepFail": "stop", 
+    "blueprintName": null, 
+    "blueprintUuid": "d50629b8-16d0-4b46-a613-f43df5229e19", 
+    "cloneUrl": null, 
+    "enabled": true, 
+    "externalUuid4": "69fecaeb-cef1-4f32-a322-050414f174b8", 
+    "key": "upgradedependenciesanddbv24step", 
+    "name": "Upgrade Dependencies and DB v24 Step", 
+    "parameterMap": [
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Text", 
+            "childParameterUuid": "8261b3a5-cd0a-4ed0-82e0-8f50576c8dfc", 
+            "childProjectName": null, 
+            "childProjectUuid": "49e46262-ff96-4fff-af15-81456299600d", 
+            "childProjectVersion": "master", 
+            "parentParameterKey": null, 
+            "parentStaticTextValue": "3.12.2"
+        }, 
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Text", 
+            "childParameterUuid": "8fe68527-9e7b-4df6-9e84-6ea52e6834c4", 
+            "childProjectName": null, 
+            "childProjectUuid": "49e46262-ff96-4fff-af15-81456299600d", 
+            "childProjectVersion": "master", 
+            "parentParameterKey": null, 
+            "parentStaticTextValue": "2.10.3"
+        }, 
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Text", 
+            "childParameterUuid": "9b320de0-05a2-4af1-86d4-7974f10924ee", 
+            "childProjectName": null, 
+            "childProjectUuid": "49e46262-ff96-4fff-af15-81456299600d", 
+            "childProjectVersion": "master", 
+            "parentParameterKey": null, 
+            "parentStaticTextValue": "3.26.6"
+        }, 
+        {
+            "childParameterName": null, 
+            "childParameterType": "c.s.s.b.phv.Text", 
+            "childParameterUuid": "ce482212-ee34-494b-a31e-f9613d45079a", 
+            "childProjectName": null, 
+            "childProjectUuid": "49e46262-ff96-4fff-af15-81456299600d", 
+            "childProjectVersion": "master", 
+            "parentParameterKey": null, 
+            "parentStaticTextValue": "15.6"
+        }
+    ], 
+    "projectName": null, 
+    "projectUuid": "49e46262-ff96-4fff-af15-81456299600d", 
+    "projectVersion": "master", 
+    "type": "com.servertribe.attune.tuples.StepProjectLinkTuple"
+}

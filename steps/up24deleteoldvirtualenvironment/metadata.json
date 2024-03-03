@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": "stop", 
+    "enabled": true, 
+    "externalUuid4": "8b5740a4-3207-448f-ae7f-ddefab8d90c5", 
+    "interpreter": 1, 
+    "key": "up24deleteoldvirtualenvironment", 
+    "name": "UP24 Delete old virtual environment", 
+    "osCredKey": "linuxattuneuser", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

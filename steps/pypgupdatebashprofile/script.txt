@@ -1,0 +1,15 @@
+sed -i '/ATTUNE_PY_VER/d' ~/.bash_profile
+sed -i '/ATTUNE_PG_VER/d' ~/.bash_profile
+sed -i '/ATTUNE_CMAKE_VER/d' ~/.bash_profile
+sed -i '/ATTUNE_TSDB_VER/d' ~/.bash_profile
+
+cat <<"EOF">> ~/.bash_profile
+
+##### SET THE ATTUNE ENVIRONMENT #####
+# Setup the variables for PYTHON and POSTGRESQL
+export ATTUNE_PY_VER="{attunePythonVer}"
+export ATTUNE_PG_VER="{attunePostgresqlVer}"
+export ATTUNE_CMAKE_VER="{attuneCmakeVer}"
+export ATTUNE_TSDB_VER="{attuneTimescaledbVer}"
+
+EOF

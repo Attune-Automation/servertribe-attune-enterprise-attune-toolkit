@@ -1,0 +1,3 @@
+ATTYNE_PY_VER={attunePythonVer}
+
+tar xvzf Python-${ATTYNE_PY_VER}.tgz

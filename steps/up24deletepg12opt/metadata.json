@@ -1,11 +1,11 @@
 {
     "actionOnStepFail": "stop", 
     "enabled": true, 
-    "externalUuid4": "c6b2ad97-ea13-43ca-a9f6-ad6413910933", 
+    "externalUuid4": "6dd6904d-46d5-4541-aba0-01d2b802ec88", 
     "interpreter": 1, 
-    "key": "rhelupdatepackages", 
-    "name": "RHEL Update Packages", 
-    "osCredKey": "linuxrootuser", 
+    "key": "up24deletepg12opt", 
+    "name": "UP24 Delete pg12 opt", 
+    "osCredKey": "linuxattuneuser", 
     "serverKey": "attunenode", 
     "successExitCode": 0, 
     "type": "com.servertribe.attune.tuples.StepSshTuple"

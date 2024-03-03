@@ -1,0 +1,45 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "d50629b8-16d0-4b46-a613-f43df5229e19", 
+    "isBlueprint": true, 
+    "key": "upgradedependenciesanddbversionless", 
+    "links": [
+        {
+            "stepKey": "pypgupdatebashprofile"
+        }, 
+        {
+            "stepKey": "generalprerequisites"
+        }, 
+        {
+            "stepKey": "installpython"
+        }, 
+        {
+            "stepKey": "installpostgresql"
+        }, 
+        {
+            "stepKey": "installcmake"
+        }, 
+        {
+            "stepKey": "installtimescaledb"
+        }, 
+        {
+            "stepKey": "configureselinux"
+        }, 
+        {
+            "stepKey": "setupattuneconfig"
+        }, 
+        {
+            "stepKey": "startpostgresql15"
+        }, 
+        {
+            "stepKey": "createattunedb"
+        }, 
+        {
+            "stepKey": "rhelcleanuppackages"
+        }
+    ], 
+    "name": "_ Upgrade Dependencies and DB Versionless", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

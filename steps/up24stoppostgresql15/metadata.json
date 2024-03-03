@@ -1,10 +1,10 @@
 {
     "actionOnStepFail": "stop", 
     "enabled": true, 
-    "externalUuid4": "c6b2ad97-ea13-43ca-a9f6-ad6413910933", 
+    "externalUuid4": "23cfe996-5500-4808-966f-cefda191166b", 
     "interpreter": 1, 
-    "key": "rhelupdatepackages", 
-    "name": "RHEL Update Packages", 
+    "key": "up24stoppostgresql15", 
+    "name": "UP24 Stop postgresql-15", 
     "osCredKey": "linuxrootuser", 
     "serverKey": "attunenode", 
     "successExitCode": 0, 

@@ -1,11 +1,11 @@
 {
     "actionOnStepFail": "stop", 
     "enabled": true, 
-    "externalUuid4": "c6b2ad97-ea13-43ca-a9f6-ad6413910933", 
+    "externalUuid4": "f073dd1c-d0ee-4118-b10f-df6971c2c1f9", 
     "interpreter": 1, 
-    "key": "rhelupdatepackages", 
-    "name": "RHEL Update Packages", 
-    "osCredKey": "linuxrootuser", 
+    "key": "ipymake", 
+    "name": "IPY Make", 
+    "osCredKey": "linuxattuneuser", 
     "serverKey": "attunenode", 
     "successExitCode": 0, 
     "type": "com.servertribe.attune.tuples.StepSshTuple"

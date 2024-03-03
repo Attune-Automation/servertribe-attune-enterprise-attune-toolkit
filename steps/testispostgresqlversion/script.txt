@@ -1,0 +1,3 @@
+
+psql <<< 'SELECT version()'
+psql <<< 'SELECT version()' | grep -q 'PostgreSQL 15.6'

@@ -1,0 +1,36 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "202a0477-f8c2-4bb2-ab7c-0dc138f3401a", 
+    "isBlueprint": true, 
+    "key": "upgradeattunev23tov24", 
+    "links": [
+        {
+            "stepKey": "up24manuallytakebackups"
+        }, 
+        {
+            "stepKey": "stopattuneservice"
+        }, 
+        {
+            "stepKey": "up24stoppostgresql12"
+        }, 
+        {
+            "stepKey": "up24deleteoldvirtualenvironment"
+        }, 
+        {
+            "stepKey": "up24moveoldopttoopt12"
+        }, 
+        {
+            "stepKey": "upgradedependenciesanddbv24"
+        }, 
+        {
+            "stepKey": "up24upgradepg12to15"
+        }, 
+        {
+            "stepKey": "deployrelease"
+        }
+    ], 
+    "name": "Upgrade Attune v23 to v24", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

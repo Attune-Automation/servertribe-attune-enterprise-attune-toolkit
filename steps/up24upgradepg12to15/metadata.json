@@ -1,0 +1,30 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "1dfb63b0-2557-432f-a0e9-d77b6b455fa8", 
+    "isBlueprint": false, 
+    "key": "up24upgradepg12to15", 
+    "links": [
+        {
+            "stepKey": "up24stoppostgresql15"
+        }, 
+        {
+            "stepKey": "up24upgradepgcluster"
+        }, 
+        {
+            "stepKey": "startpostgresql15"
+        }, 
+        {
+            "stepKey": "testispostgresqlversion"
+        }, 
+        {
+            "stepKey": "up24deletepgdata12"
+        }, 
+        {
+            "stepKey": "up24deletepg12opt"
+        }
+    ], 
+    "name": "UP24 Upgrade PG12 to 15", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

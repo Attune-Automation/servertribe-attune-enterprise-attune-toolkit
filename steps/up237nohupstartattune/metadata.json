@@ -1,11 +1,11 @@
 {
     "actionOnStepFail": "stop", 
     "enabled": true, 
-    "externalUuid4": "c6b2ad97-ea13-43ca-a9f6-ad6413910933", 
+    "externalUuid4": "cb289d11-03ae-4d32-8d92-021d8a43c804", 
     "interpreter": 1, 
-    "key": "rhelupdatepackages", 
-    "name": "RHEL Update Packages", 
-    "osCredKey": "linuxrootuser", 
+    "key": "up237nohupstartattune", 
+    "name": "UP237 nohup start attune", 
+    "osCredKey": "linuxattuneuser", 
     "serverKey": "attunenode", 
     "successExitCode": 0, 
     "type": "com.servertribe.attune.tuples.StepSshTuple"

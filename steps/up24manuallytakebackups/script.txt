@@ -1,0 +1,5 @@
+echo "We will destroy the old software," >&2
+echo " and maybe the current data" >&2
+echo "."
+echo "ENSURE YOU HAVE TAKEN YOUR OWN BACKUPS or SNAPSHOTS NOW" >&2
+false

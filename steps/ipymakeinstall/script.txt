@@ -1,0 +1,5 @@
+ATTYNE_PY_VER={attunePythonVer}
+
+cd Python-${ATTYNE_PY_VER}
+
+make install

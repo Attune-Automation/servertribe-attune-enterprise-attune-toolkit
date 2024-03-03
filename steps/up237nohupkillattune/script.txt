@@ -1,0 +1,15 @@
+pkill -f run_attune_server
+
+cat ~/attune.home/attune.log
+
+sleep 5
+
+# Check if attune is running
+if pgrep -laf run_attune_server 2>&1 > /dev/null; then
+    echo "Attune is running, it should already be stopped."
+    false
+fi
+
+echo "Removing old logs"
+[ ! -f ~/attune.home/attune.log ] || rm ~/attune.home/attune.log
+

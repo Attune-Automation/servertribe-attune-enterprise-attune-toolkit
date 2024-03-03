@@ -1,0 +1,28 @@
+set -x
+
+# Make sure the old data exists before we delete the new data
+[ -d ~/pgdata/12 ]
+
+rm -rf ~/pgdata/15
+initdb --pgdata=$HOME/pgdata/15 --auth-local=trust  --auth-host=md5
+
+OLDCFG="$HOME/pgdata/12/postgresql.conf"
+NEWCFG="$HOME/pgdata/15/postgresql.conf"
+
+pg_upgrade \
+    --old-datadir ~/pgdata/12/ \
+    --new-datadir ~/pgdata/15/ \
+    --old-bindir ~/opt12/bin/ \
+    --new-bindir ~/opt/bin/ \
+    --old-options "-c config_file=$OLDCFG" \
+    --new-options "-c config_file=$NEWCFG" 
+
+cp -v ~/pgdata/12/pg_hba.conf ~/pgdata/15/
+
+
+cp -v ~/pgdata/15/postgresql.conf ~/pgdata/15/postgresql.conf.factory
+cat ~/pgdata/12/postgresql.conf |
+    sed -E '/(^[[:space:]]*#|^[[:space:]]*$)/d' \
+    > ~/pgdata/15/postgresql.conf
+
+rm ~/delete_old_cluster.sh

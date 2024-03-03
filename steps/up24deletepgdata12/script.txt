@@ -1,0 +1,2 @@
+rm -rf ~/pgdata/12
+echo "Deleted"

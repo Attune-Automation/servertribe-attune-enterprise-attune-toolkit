@@ -1,0 +1,11 @@
+{
+    "externalUuid4": "1c8b1833-4b8d-46b4-b8e9-75efc5d85e80", 
+    "fileName": "attune_release_el7_23.7.4.tar.bz2", 
+    "formatKey": "tar.bz2", 
+    "key": "attuneenterprisereleasev2374", 
+    "md5": "6ef90e1cc336cb8cc2b8398c9372d097", 
+    "name": "Attune Enterprise Release v23.7.4", 
+    "remoteUri": "http://nexus.synerty.com/repository/synerty-packages/attune_release_el7_23.7.4.tar.bz2", 
+    "size": 85149136, 
+    "type": "com.servertribe.attune.tuples.FileArchiveLargeTuple"
+}

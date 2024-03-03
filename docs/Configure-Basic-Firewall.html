@@ -1,0 +1,1163 @@
+
+<!doctype html>
+<html lang="en">
+
+
+
+
+<head>
+    <title>How to Configure Basic Firewall - Attune Automation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title"
+          content="How to Configure Basic Firewall - Attune Automation">
+    <meta name="description"
+          content="">
+    <meta name="robots"
+          content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title"
+          content="HowTo Configure Basic Firewall - Attune Automation" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Attune Automation" />
+    <meta property="article:section" content="IT Instruction" />
+
+    <meta name="twitter:title"
+          content="How to Configure Basic Firewall - Attune Automation" />
+    <meta name="twitter:description" content="" />
+
+    <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-180x180.png">
+    <meta name="msapplication-TileImage" content="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-270x270.png">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-5TZQZNDJCD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-5TZQZNDJCD');
+    </script>
+</head>
+
+
+<body>
+
+<!-- Project NavBar -->
+
+<div class="bg-white border-bottom box-shadow sticky-top">
+<div class="container px-0">
+    <div class="row px-0">
+        <div class="col d-flex flex-column flex-lg-row align-items-center px-0
+            py-3">
+            <a class="navbar-brand my-0 mr-lg-auto"
+                  href="https://www.servertribe.com/"
+                  target="_blank">
+                    <img
+                        src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                        alt="Attune - Powered by ServerTribe"
+                        class="img-fluid navbar-img">
+            </a>
+            <nav class="my-2 my-lg-0 mr-lg-3">
+                <a class="p-2 text-dark" href="https://docs.attuneautomation.com//"
+                   target="_blank">
+                    Documentation
+                </a>
+                <a class="p-2 text-dark"
+                   href="https://discord.servertribe.com/"
+                   target="_blank">
+                    Discord
+                </a>
+                <a class="p-2 text-dark" href="https://github.com/Attune-Automation"
+                   target="_blank">
+                    GitHub
+                </a>
+                <a class="p-2 text-dark" href="https://www.servertribe.com/learn/"
+                   target="_blank">
+                    Learn
+                </a>
+            </nav>
+            <a class="btn btn-outline-primary"
+               href="https://www.servertribe.com/download-attune-registration/"
+               target="_blank">
+                Download NOW!
+            </a>
+        </div>
+    </div>
+</div></div>
+
+<!-- Project breadcrumbs -->
+
+<!-- Project breadcrumbs -->
+<div class="container px-0">
+    <div class="row">
+        <nav class="col px-0" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">
+                    <strong>Attune Project: </strong>ServerTribe Attune
+                    </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <strong>Configure Basic Firewall</strong>
+                </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<!-- Blueprint Header -->
+
+<div class="container px-0">
+    <!-- Blueprint name and description -->
+    <div class="row">
+        <div class="col px-0">
+            <h1 class="text-left">
+                How to Configure Basic Firewall
+            </h1>
+        </div>
+    </div>
+
+<!-- Blueprint Description -->
+    <div class="row pt-4">
+        <div class="col-6 px-0">
+            <h6 class="text-left">
+                This documentation is generated by
+                <a href="https://www.servertribe.com/"
+                    class="badge badge-primary"
+                    target="_blank">
+                    Attune
+                </a>
+            </h6>
+        </div>
+        <div class="col-6 align-self-end text-right px-0">
+            <h6 class="text-right">
+                <a href="https://www.youtube.com/@servertribe"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    YouTube
+                </a>
+                <a href="https://github.com/Attune-Automation"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    GitHub
+                </a>
+                <a href="https://discord.servertribe.com/"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    Discord
+                </a>
+                <a href="https://www.linkedin.com/company/servertribe/"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    LinkedIn
+                </a>
+                <a href="https://docs.attuneautomation.com"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    Documentation
+                </a>
+            </h6>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<div class="documentation">
+    <div class="container px-0">
+        <div class="row">
+
+<!-- Blueprint ToC -->
+
+
+            <div class="toc col-lg-2 px-0 pr-5">
+                <div class="container px-0 pt-3">
+                    <p class="pb-2">
+                        <strong>Contents</strong>
+                    </p>
+                    <p class="text-muted">
+                        <a href="#top">
+                            <strong>Configure Basic Firewall</strong>
+                        </a>
+                    </p>
+
+
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cfr8commonfirewallconfiguration">
+                            <strong>Step 1 -</strong> CFR8 Common Firewall Configuration
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cfr8enabledeniedconnectionlogging">
+                            <strong>Step 1.1 -</strong> CFR8 Enable Denied Connection Logging
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cfr8createfirewalllogfile">
+                            <strong>Step 1.2 -</strong> CFR8 Create Firewall Log File
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cfr8createfirewalllogrotateconfig">
+                            <strong>Step 1.3 -</strong> CFR8 Create Firewall Logrotate Config
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cfr8clearfirewallconfig">
+                            <strong>Step 1.4 -</strong> CFR8 Clear Firewall Config
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cfr8allowssh">
+                            <strong>Step 1.5 -</strong> CFR8 Allow SSH
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#addattunefirewallrules">
+                            <strong>Step 2 -</strong> Add Attune Firewall Rules
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#setdefaultfirewalldzone">
+                            <strong>Step 2.1 -</strong> Set Default Firewalld Zone
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#configurefirewalldforattune">
+                            <strong>Step 2.2 -</strong> Configure firewalld for Attune
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cfr8finishfirewallconfiguration">
+                            <strong>Step 3 -</strong> CFR8 Finish Firewall Configuration
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cfr8restartfirewall">
+                            <strong>Step 3.1 -</strong> CFR8 Restart Firewall
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cfr8clearfirewalllogs">
+                            <strong>Step 3.2 -</strong> CFR8 Clear Firewall Logs
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#cfr8printconfiguration">
+                            <strong>Step 3.3 -</strong> CFR8 Print Configuration
+                        </a>
+                    </p>
+
+
+
+                </div>
+            </div>
+
+<!-- Blueprint Contents -->
+            <div class="col-lg-8 pt-3">
+                <div class="container">
+
+
+        <div class="jumbotron">
+            <p class="display-3 text-center">
+                <strong>Automate This</strong>
+            </p>
+            <p class="display-4 text-center">
+                <strong>Get Attune</strong>
+            </p>
+            <p align="center">
+                <a href="https://www.servertribe.com/download-attune-registration/">
+                    <img src="https://img.shields.io/badge/download-latest-brightgreen.svg" /></a>
+            </p>
+            <hr class="my-4 text-center">
+            <div class="col px-0">
+                <p class="text-center">
+                    Get the most out of automation with our get started
+                    videos, product demonstrations, and more.
+                </p>
+                <p class="lead text-center">
+                    <a class="btn btn-primary btn-lg"
+                       href="https://www.servertribe.com/learn/"
+                       target="_blank"
+                       role="button">
+                        Learn Attune Automation
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <p>The following steps will guide you through the manual process.</p>
+        </div>
+
+<!-- Blueprint Steps -->
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="cfr8commonfirewallconfiguration">
+                            <a href="#cfr8commonfirewallconfiguration">
+                                <strong>Step 1 -</strong> CFR8 Common Firewall Configuration
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="cfr8enabledeniedconnectionlogging">
+                            <a href="#cfr8enabledeniedconnectionlogging">
+                                <strong>Step 1.1 -</strong> CFR8 Enable Denied Connection Logging
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+yum install -y firewalld || true
+systemctl enable --now firewalld || true
+
+# By Default we want to log our denied connections
+# This alters /etc/firewalld/firewalld.conf
+firewall-cmd --set-log-denied=all
+firewall-cmd --runtime-to-permanent
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="cfr8createfirewalllogfile">
+                            <a href="#cfr8createfirewalllogfile">
+                                <strong>Step 1.2 -</strong> CFR8 Create Firewall Log File
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                <p>Watch the files with:
+ tail -f /var/log/firewalld-droppd.log | grep DPT</p>
+<p>Clear the file with:
+echo &gt;  /var/log/firewalld-droppd.log</p>
+<p>(The grep just highlights the part with the port that is being pinged)</p>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# Make settings for the config file
+CONFIG=&#x27;:msg,contains,&quot;_DROP&quot; /var/log/firewalld-droppd.log
+:msg,contains,&quot;_REJECT&quot; /var/log/firewalld-droppd.log
+ &amp; stop&#x27;
+ 
+# Save the config file
+echo &quot;$CONFIG&quot; | tee /etc/rsyslog.d/firewalld-droppd.conf
+
+# Restart the service to apply changes
+systemctl restart rsyslog
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="cfr8createfirewalllogrotateconfig">
+                            <a href="#cfr8createfirewalllogrotateconfig">
+                                <strong>Step 1.3 -</strong> CFR8 Create Firewall Logrotate Config
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cat &lt;&lt;EOF &gt; /etc/logrotate.d/firewalld
+/var/log/firewalld /var/log/firewalld-droppd.log {
+    maxsize 500M
+    daily
+    missingok
+    rotate 5
+    copytruncate
+    minsize 1M
+    compress
+}
+EOF
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="cfr8clearfirewallconfig">
+                            <a href="#cfr8clearfirewallconfig">
+                                <strong>Step 1.4 -</strong> CFR8 Clear Firewall Config
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# Clear old firewall Rules
+rm -fv /etc/firewalld/zones/*.xml
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="cfr8allowssh">
+                            <a href="#cfr8allowssh">
+                                <strong>Step 1.5 -</strong> CFR8 Allow SSH
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# Open port 22 for ssh to continue working
+firewall-cmd --add-service=ssh --permanent
+firewall-cmd --add-service=ssh
+
+firewall-cmd --reload
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="addattunefirewallrules">
+                            <a href="#addattunefirewallrules">
+                                <strong>Step 2 -</strong> Add Attune Firewall Rules
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="setdefaultfirewalldzone">
+                            <a href="#setdefaultfirewalldzone">
+                                <strong>Step 2.1 -</strong> Set Default Firewalld Zone
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+firewall-cmd --set-default=public
+firewall-cmd --runtime-to-permanent
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="configurefirewalldforattune">
+                            <a href="#configurefirewalldforattune">
+                                <strong>Step 2.2 -</strong> Configure firewalld for Attune
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+ZONE=public
+
+
+echo &quot;This is a Attune Web-App only node, adding port 80 redirect&quot;
+firewall-cmd --add-forward-port=port=80:proto=tcp:toport=8000
+firewall-cmd --add-service=http
+
+echo &quot;This is a Attune Web-App only node, adding port 443 redirect&quot;
+firewall-cmd --add-forward-port=port=443:proto=tcp:toport=8001
+firewall-cmd --add-service=https
+
+
+firewall-cmd --runtime-to-permanent
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="cfr8finishfirewallconfiguration">
+                            <a href="#cfr8finishfirewallconfiguration">
+                                <strong>Step 3 -</strong> CFR8 Finish Firewall Configuration
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="cfr8restartfirewall">
+                            <a href="#cfr8restartfirewall">
+                                <strong>Step 3.1 -</strong> CFR8 Restart Firewall
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+systemctl restart firewalld.service
+systemctl status firewalld.service
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="cfr8clearfirewalllogs">
+                            <a href="#cfr8clearfirewalllogs">
+                                <strong>Step 3.2 -</strong> CFR8 Clear Firewall Logs
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# We don&#x27;t want firewall logs from before setup was complete.
+echo &gt; /var/log/firewalld-droppd.log
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="cfr8printconfiguration">
+                            <a href="#cfr8printconfiguration">
+                                <strong>Step 3.3 -</strong> CFR8 Print Configuration
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+firewall-cmd --list-all-zones
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+
+                    <div class="row pt-5">
+                        <div class="col">
+                            <h2>Completed</h2>
+                            <p>
+                                You have completed this instruction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Download Attune Ad -->
+
+            <div class="toc col-lg-2 px-0">
+                <div class="container px-0 pt-3 pl-5">
+                    <div class="card border-light mb-3" style="max-width: 18rem;">
+                        <div class="card-body attune-ad">
+                            <img
+                                src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                                alt="Attune - Powered by ServerTribe"
+                                class="img-fluid">
+                            <p class="card-title mt-3 text-center">
+                                <strong>Automate with Attune</strong>
+                            </p>
+                            <p class="card-text text-center">
+                                Download the Attune Community Edition.
+                            </p>
+                            <p class="text-center">
+                                <a href="https://www.servertribe.com/download-attune-registration/"
+                                   class="btn btn-primary mt-3">
+                                    DOWNLOAD!!!
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+<!-- Join Discord -->
+
+        <div class="row py-5">
+            <div class="jumbotron">
+              <h1 class="display-4 text-center">
+                  Discuss this Project in Discord
+              </h1>
+              <p class="lead">
+
+                  Join our Discord channel and connect with like-minded individuals who
+                  share your passion. Engage in lively discussions, gain valuable insights,
+                  and stay updated on the latest trends in our industry. Don't miss out on
+                  this opportunity to network, learn, and grow together.
+              </p>
+              <hr class="my-4 text-center">
+                <div class="col px-0">
+                  <p class="text-center">
+                      Click the link below and become a part of our vibrant community on
+                      Discord today!
+                  </p>
+                  <p class="lead text-center">
+                    <a class="btn btn-primary btn-lg"
+                       href="https://discord.servertribe.com/"
+                       role="button">
+                        Join NOW!!!
+                    </a>
+                  </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Project Footer -->
+
+<footer class="footer fixed-bottom bg-white border-top box-shadow">
+      <div class="container px-0">
+          <div class="row">
+              <div class="col px-0">
+                  <a class="my-0 mr-lg-auto"
+                     href="https://www.servertribe.com/"
+                     target="_blank">
+                      <img
+                          src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                          alt="Attune - Powered by ServerTribe"
+                          class="img-fluid navbar-img">
+                  </a>
+              </div>
+          </div>
+      </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+</body>
+</html>

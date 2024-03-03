@@ -10,7 +10,16 @@
             "stepKey": "ipydeploypython"
         }, 
         {
-            "stepKey": "ipyconfigurebuildinstall"
+            "stepKey": "ipyextractsource"
+        }, 
+        {
+            "stepKey": "ipyconfigurebuild"
+        }, 
+        {
+            "stepKey": "ipymake"
+        }, 
+        {
+            "stepKey": "ipymakeinstall"
         }, 
         {
             "stepKey": "ipycleanup"

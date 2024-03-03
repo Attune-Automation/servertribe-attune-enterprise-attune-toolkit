@@ -1,3 +1,0 @@
-systemctl enable postgresql-15 --now
-
-systemctl status postgresql-15

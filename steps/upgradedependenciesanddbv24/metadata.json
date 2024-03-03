@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "fa365092-ee33-4af8-b0ec-715412193a6d", 
+    "isBlueprint": true, 
+    "key": "upgradedependenciesanddbv24", 
+    "links": [
+        {
+            "stepKey": "upgradedependenciesanddbv24step"
+        }
+    ], 
+    "name": "Upgrade Dependencies and DB v24", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

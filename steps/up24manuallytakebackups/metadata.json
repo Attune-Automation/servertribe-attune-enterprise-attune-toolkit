@@ -1,10 +1,10 @@
 {
     "actionOnStepFail": "stop", 
     "enabled": true, 
-    "externalUuid4": "c6b2ad97-ea13-43ca-a9f6-ad6413910933", 
+    "externalUuid4": "6f8ab9c6-b5f8-4e17-9101-03ddd65e689e", 
     "interpreter": 1, 
-    "key": "rhelupdatepackages", 
-    "name": "RHEL Update Packages", 
+    "key": "up24manuallytakebackups", 
+    "name": "UP24 Manually Take Backups", 
     "osCredKey": "linuxrootuser", 
     "serverKey": "attunenode", 
     "successExitCode": 0, 

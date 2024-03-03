@@ -1,10 +1,10 @@
 {
     "actionOnStepFail": "stop", 
     "enabled": true, 
-    "externalUuid4": "c6b2ad97-ea13-43ca-a9f6-ad6413910933", 
+    "externalUuid4": "f750542a-c486-4d21-a189-d1a758c99c59", 
     "interpreter": 1, 
-    "key": "rhelupdatepackages", 
-    "name": "RHEL Update Packages", 
+    "key": "up24stoppostgresql12", 
+    "name": "UP24 Stop postgresql-12", 
     "osCredKey": "linuxrootuser", 
     "serverKey": "attunenode", 
     "successExitCode": 0, 

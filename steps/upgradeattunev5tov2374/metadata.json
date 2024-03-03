@@ -1,11 +1,14 @@
 {
-    "actionOnStepFail": null, 
+    "actionOnStepFail": "stop", 
     "concurrency": 1, 
     "enabled": true, 
-    "externalUuid4": "8b5413ec-0c88-45e4-a776-824e4f30dc3c", 
+    "externalUuid4": "b8b31841-5b9f-4874-a227-663540843198", 
     "isBlueprint": true, 
-    "key": "deployrelease", 
+    "key": "upgradeattunev5tov2374", 
     "links": [
+        {
+            "stepKey": "up24manuallytakebackups"
+        }, 
         {
             "stepKey": "pdrecleaninstallfiles"
         }, 
@@ -13,7 +16,7 @@
             "stepKey": "stopattuneservice"
         }, 
         {
-            "stepKey": "pdredeployinstallfiles"
+            "stepKey": "pdredeployv2374installfiles"
         }, 
         {
             "stepKey": "pdredeleteoldreleases"
@@ -25,21 +28,24 @@
             "stepKey": "pdrecreatevirtualenv"
         }, 
         {
-            "stepKey": "pdreinstallrelease"
-        }, 
-        {
-            "stepKey": "pdreinstallsystemdandrestart"
-        }, 
-        {
-            "stepKey": "pdrestartattuneservice"
+            "stepKey": "pdreinstallreleasev2347"
         }, 
         {
             "stepKey": "pdrecleaninstallfiles"
         }, 
         {
             "stepKey": "pdrelistpackages"
+        }, 
+        {
+            "stepKey": "up237nohupstartattune"
+        }, 
+        {
+            "stepKey": "up237waitforattunetostartport80"
+        }, 
+        {
+            "stepKey": "up237nohupkillattune"
         }
     ], 
-    "name": "Deploy Release", 
+    "name": "Upgrade Attune v5 to v23.7.4", 
     "type": "com.servertribe.attune.tuples.StepGroupTuple"
 }

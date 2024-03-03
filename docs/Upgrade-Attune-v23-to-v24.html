@@ -1,0 +1,2159 @@
+
+<!doctype html>
+<html lang="en">
+
+
+
+
+<head>
+    <title>How to Upgrade Attune v23 to v24 - Attune Automation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title"
+          content="How to Upgrade Attune v23 to v24 - Attune Automation">
+    <meta name="description"
+          content="">
+    <meta name="robots"
+          content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title"
+          content="HowTo Upgrade Attune v23 to v24 - Attune Automation" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Attune Automation" />
+    <meta property="article:section" content="IT Instruction" />
+
+    <meta name="twitter:title"
+          content="How to Upgrade Attune v23 to v24 - Attune Automation" />
+    <meta name="twitter:description" content="" />
+
+    <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-180x180.png">
+    <meta name="msapplication-TileImage" content="https://www.servertribe.com/wp-content/uploads/2020/10/cropped-server_tribe_favicon-270x270.png">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-5TZQZNDJCD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-5TZQZNDJCD');
+    </script>
+</head>
+
+
+<body>
+
+<!-- Project NavBar -->
+
+<div class="bg-white border-bottom box-shadow sticky-top">
+<div class="container px-0">
+    <div class="row px-0">
+        <div class="col d-flex flex-column flex-lg-row align-items-center px-0
+            py-3">
+            <a class="navbar-brand my-0 mr-lg-auto"
+                  href="https://www.servertribe.com/"
+                  target="_blank">
+                    <img
+                        src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                        alt="Attune - Powered by ServerTribe"
+                        class="img-fluid navbar-img">
+            </a>
+            <nav class="my-2 my-lg-0 mr-lg-3">
+                <a class="p-2 text-dark" href="https://docs.attuneautomation.com//"
+                   target="_blank">
+                    Documentation
+                </a>
+                <a class="p-2 text-dark"
+                   href="https://discord.servertribe.com/"
+                   target="_blank">
+                    Discord
+                </a>
+                <a class="p-2 text-dark" href="https://github.com/Attune-Automation"
+                   target="_blank">
+                    GitHub
+                </a>
+                <a class="p-2 text-dark" href="https://www.servertribe.com/learn/"
+                   target="_blank">
+                    Learn
+                </a>
+            </nav>
+            <a class="btn btn-outline-primary"
+               href="https://www.servertribe.com/download-attune-registration/"
+               target="_blank">
+                Download NOW!
+            </a>
+        </div>
+    </div>
+</div></div>
+
+<!-- Project breadcrumbs -->
+
+<!-- Project breadcrumbs -->
+<div class="container px-0">
+    <div class="row">
+        <nav class="col px-0" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">
+                    <strong>Attune Project: </strong>ServerTribe Attune
+                    </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <strong>Upgrade Attune v23 to v24</strong>
+                </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<!-- Blueprint Header -->
+
+<div class="container px-0">
+    <!-- Blueprint name and description -->
+    <div class="row">
+        <div class="col px-0">
+            <h1 class="text-left">
+                How to Upgrade Attune v23 to v24
+            </h1>
+        </div>
+    </div>
+
+<!-- Blueprint Description -->
+    <div class="row pt-4">
+        <div class="col-6 px-0">
+            <h6 class="text-left">
+                This documentation is generated by
+                <a href="https://www.servertribe.com/"
+                    class="badge badge-primary"
+                    target="_blank">
+                    Attune
+                </a>
+            </h6>
+        </div>
+        <div class="col-6 align-self-end text-right px-0">
+            <h6 class="text-right">
+                <a href="https://www.youtube.com/@servertribe"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    YouTube
+                </a>
+                <a href="https://github.com/Attune-Automation"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    GitHub
+                </a>
+                <a href="https://discord.servertribe.com/"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    Discord
+                </a>
+                <a href="https://www.linkedin.com/company/servertribe/"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    LinkedIn
+                </a>
+                <a href="https://docs.attuneautomation.com"
+                    class="badge badge-secondary"
+                    target="_blank">
+                    Documentation
+                </a>
+            </h6>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<div class="documentation">
+    <div class="container px-0">
+        <div class="row">
+
+<!-- Blueprint ToC -->
+
+
+            <div class="toc col-lg-2 px-0 pr-5">
+                <div class="container px-0 pt-3">
+                    <p class="pb-2">
+                        <strong>Contents</strong>
+                    </p>
+                    <p class="text-muted">
+                        <a href="#top">
+                            <strong>Upgrade Attune v23 to v24</strong>
+                        </a>
+                    </p>
+
+
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#up24manuallytakebackups">
+                            <strong>Step 1 -</strong> UP24 Manually Take Backups
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#stopattuneservice">
+                            <strong>Step 2 -</strong> Stop Attune Service
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#up24stoppostgresql12">
+                            <strong>Step 3 -</strong> UP24 Stop postgresql-12
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#up24deleteoldvirtualenvironment">
+                            <strong>Step 4 -</strong> UP24 Delete old virtual environment
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#up24moveoldopttoopt12">
+                            <strong>Step 5 -</strong> UP24 Move old opt to opt12
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#upgradedependenciesanddbv24">
+                            <strong>Step 6 -</strong> Upgrade Dependencies and DB v24
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#upgradedependenciesanddbv24step">
+                            <strong>Step 6.1 -</strong> Upgrade Dependencies and DB v24 Step
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#up24upgradepg12to15">
+                            <strong>Step 7 -</strong> UP24 Upgrade PG12 to 15
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#up24stoppostgresql15">
+                            <strong>Step 7.1 -</strong> UP24 Stop postgresql-15
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#up24upgradepgcluster">
+                            <strong>Step 7.2 -</strong> UP24 Upgrade PG Cluster
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#startpostgresql15">
+                            <strong>Step 7.3 -</strong> Start postgresql-15
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#testispostgresqlversion">
+                            <strong>Step 7.4 -</strong> Test is postgresql version
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#up24deletepgdata12">
+                            <strong>Step 7.5 -</strong> UP24 Delete pgdata 12
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#up24deletepg12opt">
+                            <strong>Step 7.6 -</strong> UP24 Delete pg12 opt
+                        </a>
+                    </p>
+
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#deployrelease">
+                            <strong>Step 8 -</strong> Deploy Release
+                        </a>
+                    </p>
+    
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#pdrecleaninstallfiles">
+                            <strong>Step 8.1 -</strong> PDRE Clean Install Files
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#stopattuneservice">
+                            <strong>Step 8.2 -</strong> Stop Attune Service
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#pdredeployinstallfiles">
+                            <strong>Step 8.3 -</strong> PDRE Deploy Install Files
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#pdredeleteoldreleases">
+                            <strong>Step 8.4 -</strong> PDRE Delete Old Releases
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#pdredeleteoldlogs">
+                            <strong>Step 8.5 -</strong> PDRE Delete Old Logs
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#pdrecreatevirtualenv">
+                            <strong>Step 8.6 -</strong> PDRE Create virtualenv
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#pdreinstallrelease">
+                            <strong>Step 8.7 -</strong> PDRE Install Release
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#pdreinstallsystemdandrestart">
+                            <strong>Step 8.8 -</strong> PDRE Install Systemd and Restart
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#pdrestartattuneservice">
+                            <strong>Step 8.9 -</strong> PDRE Start Attune Service
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#pdrecleaninstallfiles">
+                            <strong>Step 8.10 -</strong> PDRE Clean Install Files
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#pdrelistpackages">
+                            <strong>Step 8.11 -</strong> PDRE List Packages
+                        </a>
+                    </p>
+
+
+
+                </div>
+            </div>
+
+<!-- Blueprint Contents -->
+            <div class="col-lg-8 pt-3">
+                <div class="container">
+
+
+        <div class="jumbotron">
+            <p class="display-3 text-center">
+                <strong>Automate This</strong>
+            </p>
+            <p class="display-4 text-center">
+                <strong>Get Attune</strong>
+            </p>
+            <p align="center">
+                <a href="https://www.servertribe.com/download-attune-registration/">
+                    <img src="https://img.shields.io/badge/download-latest-brightgreen.svg" /></a>
+            </p>
+            <hr class="my-4 text-center">
+            <div class="col px-0">
+                <p class="text-center">
+                    Get the most out of automation with our get started
+                    videos, product demonstrations, and more.
+                </p>
+                <p class="lead text-center">
+                    <a class="btn btn-primary btn-lg"
+                       href="https://www.servertribe.com/learn/"
+                       target="_blank"
+                       role="button">
+                        Learn Attune Automation
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <p>The following steps will guide you through the manual process.</p>
+        </div>
+
+<!-- Blueprint Steps -->
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="up24manuallytakebackups">
+                            <a href="#up24manuallytakebackups">
+                                <strong>Step 1 -</strong> UP24 Manually Take Backups
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+echo &quot;We will destroy the old software,&quot; &gt;&amp;2
+echo &quot; and maybe the current data&quot; &gt;&amp;2
+echo &quot;.&quot;
+echo &quot;ENSURE YOU HAVE TAKEN YOUR OWN BACKUPS or SNAPSHOTS NOW&quot; &gt;&amp;2
+false
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="stopattuneservice">
+                            <a href="#stopattuneservice">
+                                <strong>Step 2 -</strong> Stop Attune Service
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+sudo systemctl stop attune || true
+
+if pgrep -laf run_attune_server 2&gt;&amp;1 &gt; /dev/null; then
+    echo &quot;Killing Attune&quot;
+    pkill -9 -f run_attune_server
+else
+    echo &quot;Attune has stopped&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="up24stoppostgresql12">
+                            <a href="#up24stoppostgresql12">
+                                <strong>Step 3 -</strong> UP24 Stop postgresql-12
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+sudo systemctl stop postgresql-12
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="up24deleteoldvirtualenvironment">
+                            <a href="#up24deleteoldvirtualenvironment">
+                                <strong>Step 4 -</strong> UP24 Delete old virtual environment
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+rm -rf python
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="up24moveoldopttoopt12">
+                            <a href="#up24moveoldopttoopt12">
+                                <strong>Step 5 -</strong> UP24 Move old opt to opt12
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+mv opt opt12
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="upgradedependenciesanddbv24">
+                            <a href="#upgradedependenciesanddbv24">
+                                <strong>Step 6 -</strong> Upgrade Dependencies and DB v24
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="upgradedependenciesanddbv24step">
+                            <a href="#upgradedependenciesanddbv24step">
+                                <strong>Step 6.1 -</strong> Upgrade Dependencies and DB v24 Step
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="up24upgradepg12to15">
+                            <a href="#up24upgradepg12to15">
+                                <strong>Step 7 -</strong> UP24 Upgrade PG12 to 15
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="up24stoppostgresql15">
+                            <a href="#up24stoppostgresql15">
+                                <strong>Step 7.1 -</strong> UP24 Stop postgresql-15
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+sudo systemctl stop postgresql-15
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="up24upgradepgcluster">
+                            <a href="#up24upgradepgcluster">
+                                <strong>Step 7.2 -</strong> UP24 Upgrade PG Cluster
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+set -x
+
+# Make sure the old data exists before we delete the new data
+[ -d ~/pgdata/12 ]
+
+rm -rf ~/pgdata/15
+initdb --pgdata=$HOME/pgdata/15 --auth-local=trust  --auth-host=md5
+
+OLDCFG=&quot;$HOME/pgdata/12/postgresql.conf&quot;
+NEWCFG=&quot;$HOME/pgdata/15/postgresql.conf&quot;
+
+pg_upgrade \
+    --old-datadir ~/pgdata/12/ \
+    --new-datadir ~/pgdata/15/ \
+    --old-bindir ~/opt12/bin/ \
+    --new-bindir ~/opt/bin/ \
+    --old-options &quot;-c config_file=$OLDCFG&quot; \
+    --new-options &quot;-c config_file=$NEWCFG&quot; 
+
+cp -v ~/pgdata/12/pg_hba.conf ~/pgdata/15/
+
+
+cp -v ~/pgdata/15/postgresql.conf ~/pgdata/15/postgresql.conf.factory
+cat ~/pgdata/12/postgresql.conf |
+    sed -E &#x27;/(^[[:space:]]*#|^[[:space:]]*$)/d&#x27; \
+    &gt; ~/pgdata/15/postgresql.conf
+
+rm ~/delete_old_cluster.sh
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="startpostgresql15">
+                            <a href="#startpostgresql15">
+                                <strong>Step 7.3 -</strong> Start postgresql-15
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+systemctl enable postgresql-15
+
+systemctl restart postgresql-15
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="testispostgresqlversion">
+                            <a href="#testispostgresqlversion">
+                                <strong>Step 7.4 -</strong> Test is postgresql version
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+psql &lt;&lt;&lt; &#x27;SELECT version()&#x27;
+psql &lt;&lt;&lt; &#x27;SELECT version()&#x27; | grep -q &#x27;PostgreSQL 15.6&#x27;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="up24deletepgdata12">
+                            <a href="#up24deletepgdata12">
+                                <strong>Step 7.5 -</strong> UP24 Delete pgdata 12
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+rm -rf ~/pgdata/12
+echo &quot;Deleted&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="up24deletepg12opt">
+                            <a href="#up24deletepg12opt">
+                                <strong>Step 7.6 -</strong> UP24 Delete pg12 opt
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+rm -rf ~/opt12
+echo &quot;Deleted&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+        
+
+
+
+                    <div class="row pt-5">
+                        <h3 id="deployrelease">
+                            <a href="#deployrelease">
+                                <strong>Step 8 -</strong> Deploy Release
+                            </a>
+                        </h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="pdrecleaninstallfiles">
+                            <a href="#pdrecleaninstallfiles">
+                                <strong>Step 8.1 -</strong> PDRE Clean Install Files
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+rm -rf attune_install
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="stopattuneservice">
+                            <a href="#stopattuneservice">
+                                <strong>Step 8.2 -</strong> Stop Attune Service
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+sudo systemctl stop attune || true
+
+if pgrep -laf run_attune_server 2&gt;&amp;1 &gt; /dev/null; then
+    echo &quot;Killing Attune&quot;
+    pkill -9 -f run_attune_server
+else
+    echo &quot;Attune has stopped&quot;
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="pdredeployinstallfiles">
+                            <a href="#pdredeployinstallfiles">
+                                <strong>Step 8.3 -</strong> PDRE Deploy Install Files
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+    <div class="row">
+        <p>
+            
+        </p>
+        <p>
+            Copy the File(s)
+            <strong>Attune_Enterprise_Release.tar.bz2</strong>
+            to the target node.
+        </p>
+        <p>
+            <strong>Extract and deploy the File(s)</strong> here:
+        </p>
+    </div>
+    <div class="row py-1">
+        <code class="language-bash">
+attune_install, relative to the home directory
+        </code>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="pdredeleteoldreleases">
+                            <a href="#pdredeleteoldreleases">
+                                <strong>Step 8.4 -</strong> PDRE Delete Old Releases
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+rm -rf python
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="pdredeleteoldlogs">
+                            <a href="#pdredeleteoldlogs">
+                                <strong>Step 8.5 -</strong> PDRE Delete Old Logs
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+echo &quot;Deleting attune log files&quot;
+rm -f attune.home/*.log*
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="pdrecreatevirtualenv">
+                            <a href="#pdrecreatevirtualenv">
+                                <strong>Step 8.6 -</strong> PDRE Create virtualenv
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+which virtualenv
+if [ &quot;$HOME/opt/bin/virtualenv&quot; == `which virtualenv` ]; then
+    echo &quot;SUCCESS, this is the right virtualenv&quot;
+else
+    echo &quot;This isn&#x27;t the right virtualenv&quot;
+    false
+fi
+
+virtualenv ~/python
+
+which python
+if [ &quot;$HOME/python/bin/python&quot; == `which python` ]; then
+    echo &quot;SUCCESS, this is the right python&quot;
+else
+    echo &quot;This isn&#x27;t the right python&quot;
+    false
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="pdreinstallrelease">
+                            <a href="#pdreinstallrelease">
+                                <strong>Step 8.7 -</strong> PDRE Install Release
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+if [ &quot;$HOME/python/bin/pip&quot; == `which pip` ]; then
+    echo &quot;SUCCESS, this is the right pip&quot;
+else
+    echo &quot;This isn&#x27;t the right pip&quot;
+    false
+fi
+
+
+cd attune_install/attune_ee*
+
+# Deploy the software
+pip install --no-index --no-cache  --find-links=py py/attune-*.whl
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="row">
+        <p>
+            This script may require you to answer the following prompts:
+        </p>
+    </div>
+    <div class="row">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Prompt
+                    </th>
+                    <th class="prompts">
+                        Answer
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Do you want to permanently enable this release?
+                    </td>
+                    <td class="prompts">
+                        <code class="language-sql">
+y
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Do you want to update the init scripts to auto start peek?
+                    </td>
+                    <td class="prompts">
+                        <code class="language-sql">
+n
+                        </code>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="pdreinstallsystemdandrestart">
+                            <a href="#pdreinstallsystemdandrestart">
+                                <strong>Step 8.8 -</strong> PDRE Install Systemd and Restart
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+cd ~{linuxAttuneUser.user}/attune_install/attune_ee*
+
+# Install the init script
+sed -i -e &#x27;s%#ATTUNE_HOME#%/home/{linuxAttuneUser.user}%&#x27; init/attune.service
+sudo cp init/attune.service /lib/systemd/system/
+
+# Reload systemctl
+sudo systemctl daemon-reload
+
+sudo systemctl enable attune
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="pdrestartattuneservice">
+                            <a href="#pdrestartattuneservice">
+                                <strong>Step 8.9 -</strong> PDRE Start Attune Service
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attunenode}
+                            </code>
+                        </div>
+
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# Check if attune is running
+if pgrep -laf run_attune_server 2&gt;&amp;1 &gt; /dev/null; then
+    echo &quot;Attune is running, it should already be stopped.&quot;
+    false
+fi
+
+echo &quot;Removing old logs&quot;
+[ ! -f ~/attune.home/attune.log ] || rm ~/attune.home/attune.log
+
+echo &quot;Restarting PostgreSQL and Attune&quot;
+sudo systemctl restart postgresql-15
+sudo systemctl restart attune
+
+# Wiat for Attune to start
+sleep 20s
+
+# Check if attune is running
+if pgrep -laf run_attune_server 2&gt;&amp;1 &gt; /dev/null; then
+    echo &quot;Attune is running, GREAT.&quot;
+else
+    echo &quot;Attune has failed to start&quot; &gt;&amp;2
+    tail -n50 ~/attune.home/attune.log
+    false
+fi
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="pdrecleaninstallfiles">
+                            <a href="#pdrecleaninstallfiles">
+                                <strong>Step 8.10 -</strong> PDRE Clean Install Files
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+rm -rf attune_install
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="pdrelistpackages">
+                            <a href="#pdrelistpackages">
+                                <strong>Step 8.11 -</strong> PDRE List Packages
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="description col px-0">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+# Capture all the logged packages
+pip freeze
+
+echo which pip
+which pip
+
+echo which python
+which python
+
+pip freeze
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+
+
+                    <div class="row pt-5">
+                        <div class="col">
+                            <h2>Completed</h2>
+                            <p>
+                                You have completed this instruction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Download Attune Ad -->
+
+            <div class="toc col-lg-2 px-0">
+                <div class="container px-0 pt-3 pl-5">
+                    <div class="card border-light mb-3" style="max-width: 18rem;">
+                        <div class="card-body attune-ad">
+                            <img
+                                src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                                alt="Attune - Powered by ServerTribe"
+                                class="img-fluid">
+                            <p class="card-title mt-3 text-center">
+                                <strong>Automate with Attune</strong>
+                            </p>
+                            <p class="card-text text-center">
+                                Download the Attune Community Edition.
+                            </p>
+                            <p class="text-center">
+                                <a href="https://www.servertribe.com/download-attune-registration/"
+                                   class="btn btn-primary mt-3">
+                                    DOWNLOAD!!!
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+<!-- Join Discord -->
+
+        <div class="row py-5">
+            <div class="jumbotron">
+              <h1 class="display-4 text-center">
+                  Discuss this Project in Discord
+              </h1>
+              <p class="lead">
+
+                  Join our Discord channel and connect with like-minded individuals who
+                  share your passion. Engage in lively discussions, gain valuable insights,
+                  and stay updated on the latest trends in our industry. Don't miss out on
+                  this opportunity to network, learn, and grow together.
+              </p>
+              <hr class="my-4 text-center">
+                <div class="col px-0">
+                  <p class="text-center">
+                      Click the link below and become a part of our vibrant community on
+                      Discord today!
+                  </p>
+                  <p class="lead text-center">
+                    <a class="btn btn-primary btn-lg"
+                       href="https://discord.servertribe.com/"
+                       role="button">
+                        Join NOW!!!
+                    </a>
+                  </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Project Footer -->
+
+<footer class="footer fixed-bottom bg-white border-top box-shadow">
+      <div class="container px-0">
+          <div class="row">
+              <div class="col px-0">
+                  <a class="my-0 mr-lg-auto"
+                     href="https://www.servertribe.com/"
+                     target="_blank">
+                      <img
+                          src="https://www.servertribe.com/wp-content/uploads/2022/06/AttuneLogoV2_powered_by.png"
+                          alt="Attune - Powered by ServerTribe"
+                          class="img-fluid navbar-img">
+                  </a>
+              </div>
+          </div>
+      </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+</body>
+</html>

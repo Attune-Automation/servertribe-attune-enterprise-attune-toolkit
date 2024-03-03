@@ -1,0 +1,13 @@
+{
+    "actionOnStepFail": "stop", 
+    "enabled": true, 
+    "externalUuid4": "15b1b96c-2c4d-4bfe-b9f6-0a68619ed3cb", 
+    "key": "up237waitforattunetostartport80", 
+    "minDowntime": 0, 
+    "name": "UP237 Wait for Attune to Start (Port 80)", 
+    "postWait": 0, 
+    "preWait": 0, 
+    "serverKey": "attunenode", 
+    "tcpPort": 80, 
+    "type": "com.servertribe.attune.tuples.StepTcpPingTuple"
+}

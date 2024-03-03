@@ -1,0 +1,15 @@
+{
+    "actionOnStepFail": "stop", 
+    "concurrency": 1, 
+    "enabled": true, 
+    "externalUuid4": "45d52acb-9c75-48bd-b6f0-2daafd746309", 
+    "isBlueprint": true, 
+    "key": "installdependenciesanddbv24", 
+    "links": [
+        {
+            "stepKey": "installdependenciesanddbv24step"
+        }
+    ], 
+    "name": "Install Dependencies and DB v24", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}
