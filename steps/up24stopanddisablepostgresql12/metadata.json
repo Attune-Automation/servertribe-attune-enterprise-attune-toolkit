@@ -1,0 +1,12 @@
+{
+    "actionOnStepFail": "stop", 
+    "enabled": true, 
+    "externalUuid4": "f750542a-c486-4d21-a189-d1a758c99c59", 
+    "interpreter": 1, 
+    "key": "up24stopanddisablepostgresql12", 
+    "name": "UP24 Stop and Disable postgresql-12", 
+    "osCredKey": "linuxrootuser", 
+    "serverKey": "attunenode", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}

@@ -1,11 +1,11 @@
 {
     "actionOnStepFail": "stop", 
     "enabled": true, 
-    "externalUuid4": "f750542a-c486-4d21-a189-d1a758c99c59", 
+    "externalUuid4": "1c61f337-856e-4654-a083-bfcc1ca7be06", 
     "interpreter": 1, 
-    "key": "up24stoppostgresql12", 
-    "name": "UP24 Stop postgresql-12", 
-    "osCredKey": "linuxrootuser", 
+    "key": "up24deletepostgresql12service", 
+    "name": "UP24 Delete postgresql-12.service", 
+    "osCredKey": "linuxattuneuser", 
     "serverKey": "attunenode", 
     "successExitCode": 0, 
     "type": "com.servertribe.attune.tuples.StepSshTuple"

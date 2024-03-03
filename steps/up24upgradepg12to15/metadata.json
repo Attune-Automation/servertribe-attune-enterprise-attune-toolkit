@@ -23,6 +23,9 @@
         }, 
         {
             "stepKey": "up24deletepg12opt"
+        }, 
+        {
+            "stepKey": "up24deletepostgresql12service"
         }
     ], 
     "name": "UP24 Upgrade PG12 to 15", 

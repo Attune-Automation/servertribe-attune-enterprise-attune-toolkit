@@ -1,0 +1,2 @@
+rm /usr/lib/systemd/system/postgresql-12.service
+systemctl daemon-reload

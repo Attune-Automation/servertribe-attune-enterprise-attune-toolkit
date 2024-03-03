@@ -13,7 +13,7 @@
             "stepKey": "stopattuneservice"
         }, 
         {
-            "stepKey": "up24stoppostgresql12"
+            "stepKey": "up24stopanddisablepostgresql12"
         }, 
         {
             "stepKey": "up24deleteoldvirtualenvironment"

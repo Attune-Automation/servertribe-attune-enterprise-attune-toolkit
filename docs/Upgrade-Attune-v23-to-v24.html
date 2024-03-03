@@ -222,8 +222,8 @@
         
 
                     <p class="text-muted pt-2">
-                        <a href="#up24stoppostgresql12">
-                            <strong>Step 3 -</strong> UP24 Stop postgresql-12
+                        <a href="#up24stopanddisablepostgresql12">
+                            <strong>Step 3 -</strong> UP24 Stop and Disable postgresql-12
                         </a>
                     </p>
 
@@ -313,6 +313,14 @@
                     <p class="text-muted pt-2">
                         <a href="#up24deletepg12opt">
                             <strong>Step 7.6 -</strong> UP24 Delete pg12 opt
+                        </a>
+                    </p>
+
+        
+
+                    <p class="text-muted pt-2">
+                        <a href="#up24deletepostgresql12service">
+                            <strong>Step 7.7 -</strong> UP24 Delete postgresql-12.service
                         </a>
                     </p>
 
@@ -603,9 +611,9 @@ fi
 
 
                     <div class="row pt-5">
-                        <h3 id="up24stoppostgresql12">
-                            <a href="#up24stoppostgresql12">
-                                <strong>Step 3 -</strong> UP24 Stop postgresql-12
+                        <h3 id="up24stopanddisablepostgresql12">
+                            <a href="#up24stopanddisablepostgresql12">
+                                <strong>Step 3 -</strong> UP24 Stop and Disable postgresql-12
                             </a>
                         </h3>
                     </div>
@@ -654,6 +662,7 @@ ssh {linuxrootuser}@{attunenode}
             <pre>
                 <code class="language-sql py-0">
 sudo systemctl stop postgresql-12
+sudo systemctl disable postgresql-12
                 </code>
             </pre>
         </div>
@@ -1263,6 +1272,54 @@ echo &quot;Deleted&quot;
                 <code class="language-sql py-0">
 rm -rf ~/opt12
 echo &quot;Deleted&quot;
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+                    <div class="row pt-5">
+                        <h4 id="up24deletepostgresql12service">
+                            <a href="#up24deletepostgresql12service">
+                                <strong>Step 7.7 -</strong> UP24 Delete postgresql-12.service
+                            </a>
+                        </h4>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+    <div class="row">
+        <p>
+            Execute the following script:
+        </p>
+    </div>
+    <div class="row">
+        <div class="col px-0">
+            <pre>
+                <code class="language-sql py-0">
+rm /usr/lib/systemd/system/postgresql-12.service
+systemctl daemon-reload
                 </code>
             </pre>
         </div>
