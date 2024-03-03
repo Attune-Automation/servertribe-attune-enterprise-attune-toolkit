@@ -5,7 +5,7 @@
     "interpreter": 1, 
     "key": "up24deletepostgresql12service", 
     "name": "UP24 Delete postgresql-12.service", 
-    "osCredKey": "linuxattuneuser", 
+    "osCredKey": "linuxrootuser", 
     "serverKey": "attunenode", 
     "successExitCode": 0, 
     "type": "com.servertribe.attune.tuples.StepSshTuple"

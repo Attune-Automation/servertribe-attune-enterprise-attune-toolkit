@@ -1302,7 +1302,18 @@ echo &quot;Deleted&quot;
 
 
 
-    
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxrootuser}@{attunenode}
+                            </code>
+                        </div>
+
 
 
     
@@ -1318,7 +1329,7 @@ echo &quot;Deleted&quot;
         <div class="col px-0">
             <pre>
                 <code class="language-sql py-0">
-rm /usr/lib/systemd/system/postgresql-12.service
+rm -f /usr/lib/systemd/system/postgresql-12.service
 systemctl daemon-reload
                 </code>
             </pre>
@@ -1387,7 +1398,18 @@ systemctl daemon-reload
 
 
 
-    
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {linuxattuneuser}@{attunenode}
+                            </code>
+                        </div>
+
 
 
     
